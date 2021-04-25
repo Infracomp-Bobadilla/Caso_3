@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group 'Optimizado'
+version '1.0-Ciclos'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'Optimizado.Main'
+        )
+    }
+}
